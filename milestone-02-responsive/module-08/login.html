@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- ==============font awesome =========== -->
+    <script src="https://kit.fontawesome.com/6ebddd7a68.js" crossorigin="anonymous"></script>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .login-form input{
+            padding: 5px 10px;
+            font-size: 1.5em;
+            font-weight: 1em;
+            margin-top:1em;
+        }
+
+        .login-form  input[type="Submit"]{
+            background-color: orange;
+            border: 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+        <span>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </span>
+        <span>
+            <a href=""><i class="fa fa-solid fa-user"></i></a>
+            <a href=""><i class="fa fa-brands fa-drupal"></i></a>
+            
+        </span>
+       </nav>
+    </header>
+    <section class="section-container">
+        <form class="login-form">
+            <h2>Please Login</h2>
+            <input type="email" name="email" placeholder="your email please"required>
+            <input type="password" placeholder="your name please" required>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
